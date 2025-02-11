@@ -1,0 +1,17 @@
+{
+  "name": "@repo/client",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --clearScreen false",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@repo/node": "*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "typescript": "5.7.3",
+    "vite": "6.1.0"
+  }
+}
