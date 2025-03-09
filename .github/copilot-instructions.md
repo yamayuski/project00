@@ -10,17 +10,13 @@ formatter/linter は biome が使われ、 `npm run format` で自動フォー�
 
 プロジェクトは Cloudflare Workers にデプロイされ、サーバレスとして実行されます。
 
-デプロイされた関数は WebSocket をサポートし、 WHIP/WHEP プロトコルで対話します。
-
-ブラウザクライアントは Cloudflare Calls を用いて WebRTC 接続を確立し、 audio のストリームと DataChannel によるデータ送受信がおこなれます。
+デプロイされた関数は WebSocket をサポートします。
 
 ## Project00 とは
 
 Project00 とは、ブラウザで遊べる MMORPG のプロジェクトです。
 
-WebRTC をサポートしたモダンブラウザで、主に PC を対象としています。
-
-ユーザーはデプロイされた URL にアクセスし、 WebSocket 接続を元に WebRTC ピアリングを確立します。
+WebSocket をサポートしたモダンブラウザで、主に PC を対象としています。
 
 ## プロジェクト一覧
 
