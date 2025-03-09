@@ -5,11 +5,9 @@
     "dev": "tsc --watch",
     "build": "tsc"
   },
-  "dependencies": {
-    "mediasoup-client": "3.8.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@repo/typescript-config": "*",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   }
 }
