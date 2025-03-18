@@ -7,7 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@repo/node": "*"
+    "@repo/browser": "*"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",

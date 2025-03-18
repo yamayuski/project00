@@ -20,8 +20,8 @@ WebSocket をサポートしたモダンブラウザで、主に PC を対象と
 
 ## プロジェクト一覧
 
+- [docs](/docs): docs は VitePress ベースの markdown で記述された public documents です
 - [client](/code/apps/client): client はブラウザクライアントのエントリポイントです
-- [docs](/code/apps/docs): docs は VitePress ベースの markdown で記述された public documents です
 - [server](/code/apps/server): server は Cloudflare Workers のエントリポイントです
 - [browser](/code/packages/browser/): browser はブラウザクライアントのライブラリパッケージです
 - [node](/code/packages/node/): node は Cloudflare Workers のライブラリパッケージです

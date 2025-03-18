@@ -5,7 +5,9 @@
     "dev": "tsc --watch",
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "json-rpc-2.0": "^1.7.0"
+  },
   "devDependencies": {
     "@repo/typescript-config": "*",
     "typescript": "5.8.2"
