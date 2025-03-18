@@ -1,0 +1,3 @@
+name = "project00-auth"
+main = "src/index.ts"
+compatibility_date = "2025-02-11"

@@ -1,19 +1,18 @@
 {
-  "name": "@repo/shared",
+  "name": "@repo/backend",
   "type": "module",
   "exports": {
-    "./*": {
-      "types": "./src/*.ts",
-      "default": "./dist/*.js"
-    }
+    "./areaServer": "./src/areaServer.ts",
+    "./authServer": "./src/authServer.ts"
   },
   "scripts": {
     "dev": "tsc --watch",
-    "check-types": "tsc --noEmit",
     "build": "tsc"
   },
   "dependencies": {
-    "json-rpc-2.0": "^1.7.0"
+    "@repo/shared": "*",
+    "json-rpc-2.0": "^1.7.0",
+    "worker-password-auth": "^1.0.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",

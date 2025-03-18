@@ -4,19 +4,19 @@ import type {
   TypedJSONRPCServerAndClient,
 } from "json-rpc-2.0";
 
-type MainServerMethods = {
+type AuthServerMethods = {
   register(params: { email: string; password: string }): void;
   login(params: { email: string; password: string }): { token: string };
   joinToArea(): { areaId: string };
 };
 
-export type MainServer = TypedJSONRPCServer<MainServerMethods>;
-export type MainClient = TypedJSONRPCClient<MainServerMethods>;
+export type AuthServer = TypedJSONRPCServer<AuthServerMethods>;
+export type AuthClient = TypedJSONRPCClient<AuthServerMethods>;
 
-type AreaClientToServerMethods = {
+export type AreaClientToServerMethods = {
   move(params: { x: number; y: number }): void;
 };
-type AreaServerToClientMethods = {
+export type AreaServerToClientMethods = {
   onJoined(params: { x: number; y: number }): void;
 };
 

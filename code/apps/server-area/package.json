@@ -1,12 +1,13 @@
 {
-  "name": "@repo/node",
+  "name": "@repo/server-area",
   "type": "module",
   "scripts": {
-    "dev": "tsc --watch",
+    "dev": "wrangler dev",
     "build": "tsc"
   },
   "dependencies": {
-    "@repo/shared": "*"
+    "@repo/backend": "*",
+    "hono": "^4.7.4"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",

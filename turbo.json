@@ -8,11 +8,13 @@
       "outputs": ["dist/**"]
     },
     "dev": {
+      "dependsOn": ["^dev"],
       "cache": false,
       "persistent": true
     },
-    "lint": {
-      "dependsOn": ["^build", "^lint"]
+    "//#format-and-lint": {},
+    "//#format-and-lint:fix": {
+      "cache": false
     }
   }
 }

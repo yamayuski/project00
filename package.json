@@ -3,10 +3,10 @@
   "private": true,
   "packageManager": "npm@11.1.0",
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "format": "npx @biomejs/biome format --write code",
-    "lint": "npx @biomejs/biome ci code"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "format-and-lint:fix": "npx @biomejs/biome format --write code",
+    "format-and-lint": "npx @biomejs/biome ci code"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
