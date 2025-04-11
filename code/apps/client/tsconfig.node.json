@@ -1,0 +1,7 @@
+{
+  "extends": "@project00/typescript-config/base.json",
+  "compilerOptions": {
+    "composite": true
+  },
+  "include": ["vite.config.ts"]
+}

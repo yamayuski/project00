@@ -1,4 +1,4 @@
-import type { AuthServer } from "@repo/shared/index";
+import type { AuthServer } from "@project00/shared/index";
 import { JSONRPCServer } from "json-rpc-2.0";
 import { AuthRepository } from "./authRepository";
 

@@ -2,7 +2,7 @@ import type {
   AreaClientToServerMethods,
   AreaServer,
   AreaServerToClientMethods,
-} from "@repo/shared/index";
+} from "@project00/shared/index";
 import {
   JSONRPCClient,
   JSONRPCServer,
@@ -15,16 +15,20 @@ export function createAreaServer(
 ): AreaServer {
   const rpcServer = new JSONRPCServer<AreaClientToServerMethods>();
   rpcServer.addMethod("move", ({ x, y }) => {
+    console.log("Moving to coordinates:", x, y);
     // TODO: Implement move logic
   });
   const rpcClient = new JSONRPCClient<AreaServerToClientMethods>((req) => {
     sendMessage(req);
   });
-  const serverClient: TypedJSONRPCServerAndClient<
+  const serverClient = new JSONRPCServerAndClient(
+    rpcServer,
+    rpcClient,
+  ) as unknown as TypedJSONRPCServerAndClient<
     AreaClientToServerMethods,
     AreaServerToClientMethods,
     void,
     void
-  > = new JSONRPCServerAndClient(rpcServer, rpcClient);
+  >;
   return serverClient;
 }

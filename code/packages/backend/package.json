@@ -1,5 +1,5 @@
 {
-  "name": "@repo/backend",
+  "name": "@project00/backend",
   "type": "module",
   "exports": {
     "./areaServer": "./src/areaServer.ts",
@@ -10,12 +10,12 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@repo/shared": "workspace:*",
+    "@project00/shared": "workspace:*",
     "json-rpc-2.0": "catalog:",
     "worker-password-auth": "^1.0.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@project00/typescript-config": "workspace:*",
     "typescript": "catalog:"
   }
 }

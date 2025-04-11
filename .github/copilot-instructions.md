@@ -1,30 +1,29 @@
 # Project00 のコードベースについて
 
-Project00 は全て TypeScript により記述されます。コードベースは日本語でコメントされますが、オブジェクト名などは英語が使われます。
+Project00 は全て TypeScript により記述されます JavaScript は一部の例外を除き認められません。
 
-コードベースは `/code` 以下にあり、 turborepo により monorepo 化されています。
+コードベースは日本語でコメントされますが、オブジェクト名などは英語が使われます。
 
-tsconfig.json のベースファイルは [base.json](/code/packages/typescript-config/base.json) です。ブラウザで動作するフロントエンドの tsconfig.json のベースファイルは [vite.json](/code/packages/typescript-config/vite.json) です。
+コードベースは全て `/code` 以下にあり、 turborepo により monorepo 化されています。
 
-formatter/linter は biome が使われ、 `npm run format` で自動フォーマットされます。
+formatter/linter は biome が使われ、 `npm run format-and-lint:fix` で自動フォーマットされます。
 
-プロジェクトは Cloudflare Workers にデプロイされ、サーバレスとして実行されます。
+プロジェクトは主に Cloudflare Workers にデプロイされ、サーバレスとして実行されます。
 
-デプロイされた関数は WebSocket をサポートします。
+デプロイされた関数は WebSocket/WebTransport をサポートします。
+
+一人でも開発出来るように、仮想の BOT ユーザーをローカルサーバに参加させることが出来ます。
+
+UI は日本語を基準としつつ、様々な言語に変換出来る前提にします。
+
+Progressive Web Apps に準拠し、インストールして遊ぶことが出来ます。
+
+基本的に PC ブラウザでのプレイを推奨とし、モバイルアプリは今後のロードマップで追加される可能性があります。
 
 ## Project00 とは
 
 Project00 とは、ブラウザで遊べる MMORPG のプロジェクトです。
 
-WebSocket をサポートしたモダンブラウザで、主に PC を対象としています。
+WebSocket や WebTransport などの双方向通信を行い、リアルタイムでサーバ(ランタイム問わず)とクライアント(Vite)が通信します。
 
-## プロジェクト一覧
-
-- [docs](/docs): docs は VitePress ベースの markdown で記述された public documents です
-- [client](/code/apps/client): client はブラウザクライアントのエントリポイントです
-- [server](/code/apps/server): server は Cloudflare Workers のエントリポイントです
-- [browser](/code/packages/browser/): browser はブラウザクライアントのライブラリパッケージです
-- [node](/code/packages/node/): node は Cloudflare Workers のライブラリパッケージです
-- [shared](/code/packages/shared/): shared は Cloudflare Workers およびブラウザクライアントで共有されるライブラリパッケージです
-
-各プロジェクトは `src` ディレクトリに TypeScript ソースコードが置かれます。
+レンダリングエンジンは Babylon.js 8 を用います。

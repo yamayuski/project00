@@ -1,0 +1,21 @@
+{
+  "name": "@project00/runtime-engine",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./components/Root": "./src/components/Root.tsx"
+  },
+  "dependencies": {
+    "@babylonjs/core": "catalog:",
+    "@babylonjs/loaders": "catalog:",
+    "react": "catalog:"
+  },
+  "devDependencies": {
+    "@project00/typescript-config": "workspace:*",
+    "@types/react": "^19.0.0",
+    "typescript": "catalog:"
+  }
+}

@@ -1,4 +1,4 @@
-import { authServer } from "@repo/backend/authServer";
+import { authServer } from "@project00/backend/authServer";
 import { Hono } from "hono";
 
 const app = new Hono();

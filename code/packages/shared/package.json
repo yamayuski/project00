@@ -1,5 +1,5 @@
 {
-  "name": "@repo/shared",
+  "name": "@project00/shared",
   "type": "module",
   "exports": {
     "./*": {
@@ -16,7 +16,7 @@
     "json-rpc-2.0": "catalog:"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@project00/typescript-config": "workspace:*",
     "typescript": "catalog:"
   }
 }

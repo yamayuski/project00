@@ -1,5 +1,5 @@
 {
-  "name": "@repo/server-auth",
+  "name": "@project00/server-auth",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev src/index.ts",
@@ -7,11 +7,11 @@
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
-    "@repo/backend": "workspace:*",
+    "@project00/backend": "workspace:*",
     "hono": "catalog:"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@project00/typescript-config": "workspace:*",
     "typescript": "catalog:"
   }
 }

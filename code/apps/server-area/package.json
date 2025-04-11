@@ -1,16 +1,16 @@
 {
-  "name": "@repo/server-area",
+  "name": "@project00/server-area",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "build": "tsc"
   },
   "dependencies": {
-    "@repo/backend": "workspace:*",
+    "@project00/backend": "workspace:*",
     "hono": "catalog:"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@project00/typescript-config": "workspace:*",
     "typescript": "catalog:"
   }
 }
