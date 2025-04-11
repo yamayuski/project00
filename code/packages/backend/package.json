@@ -10,12 +10,12 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@repo/shared": "*",
-    "json-rpc-2.0": "^1.7.0",
+    "@repo/shared": "workspace:*",
+    "json-rpc-2.0": "catalog:",
     "worker-password-auth": "^1.0.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
-    "typescript": "5.8.2"
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "catalog:"
   }
 }

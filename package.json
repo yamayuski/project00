@@ -1,7 +1,7 @@
 {
   "name": "project00-root",
   "private": true,
-  "packageManager": "npm@11.1.0",
+  "packageManager": "pnpm@10.8.0",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
@@ -12,10 +12,9 @@
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22.0.0",
     "turbo": "^2.4.4",
-    "typescript": "5.8.2",
+    "typescript": "catalog:",
     "wrangler": "^4.1.0"
   },
-  "workspaces": ["code/apps/*", "code/packages/*"],
   "engines": {
     "node": ">=22.0.0"
   }

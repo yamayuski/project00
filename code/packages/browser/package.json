@@ -6,10 +6,10 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@repo/shared": "*"
+    "@repo/shared": "workspace:*"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
-    "typescript": "5.8.2"
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "catalog:"
   }
 }

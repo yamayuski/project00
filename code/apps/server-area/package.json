@@ -6,11 +6,11 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@repo/backend": "*",
-    "hono": "^4.7.4"
+    "@repo/backend": "workspace:*",
+    "hono": "catalog:"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
-    "typescript": "5.8.2"
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "catalog:"
   }
 }

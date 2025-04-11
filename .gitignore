@@ -137,3 +137,6 @@ dist
 
 # turborepo
 .turbo
+
+# pnpm
+.pnpm-store/

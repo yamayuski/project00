@@ -13,10 +13,10 @@
     "build": "tsc"
   },
   "dependencies": {
-    "json-rpc-2.0": "^1.7.0"
+    "json-rpc-2.0": "catalog:"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
-    "typescript": "5.8.2"
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "catalog:"
   }
 }
